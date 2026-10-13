@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega HTML - Mi Proyecto Stellar Gear</title>
+    <!-- Fuente de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Enlace al archivo CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Etiqueta semántica Header -->
+    <header>
+        <div class="container-header">
+            <h1 class="logo">Stellar Gear</h1>
+            <!-- Etiqueta semántica de Navegación -->
+            <nav>
+                <!-- Lista de navegación -->
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Etiqueta semántica Main (contenido principal) -->
+    <main>
+        <!-- Sección 1: Inicio / Hero -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h2>Bienvenidos a tu tienda de teconlogía especializda</h2>
+                <p>Productos tecnológicos únicos y especiales de calidad en un solo lugar</p>
+                <!-- Imagen multimedia  -->
+                <img src="img/inicio.jpeg" 
+                     alt="Oferta de Productos gamers" 
+                     class="hero-img">
+            </div>
+        </section>
+
+        <!-- Sección 2: Productos -->
+        <section id="productos" class="productos">
+            <h2>Nuestros Productos</h2>
+            <div class="productos-grid">
+                <div class="producto-card">
+                    <img src="img/auriculares-con-forma-de-orejas-de-gato_4_800x450.jpeg" alt="Auriculares inalámbricos">
+                    <h3>Auriculares Inalámbricos Razer</h3>
+                    <p>Cancelación de ruido y 20 horas de batería.</p>
+                    <p class="precio">$250.000</p>
+                </div>
+                <div class="producto-card">
+                    <img src="img/teclado_pokemon.jpeg" alt="Teclado Pokemon">
+                    <h3>Teclado Gamer Pokemon</h3>
+                    <p>Personaliza tu escritorio con detalles de tu anime favorito</p>
+                    <p class="precio">$300.000</p>
+                </div>
+                <div class="producto-card">
+                    <img src="img/silla_gamer_pokemon.jpeg" alt="Silla Gamer">
+                    <h3>Silla Gamer Gengar</h3>
+                    <p>Convertí tu espacio de juego en un verdadero momento de comidad, ideal para pasar muchas horas viceando.</p>
+                    <p class="precio">$499.990</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Nosotros -->
+        <section id="nosotros" class="nosotros">
+            <h2>Sobre Nosotros</h2>
+            <p>Somos una empresa con 5 años de experiencia en tecnología, enfocada en ofrecer productos de calidad con atención personalizada.</p>
+            <p>Conoce más sobre nuestra propuesta de valor en el siguiente video:</p>
+            <!-- Iframe multimedia -->
+            <iframe src="https://youtube.com/shorts/e7BS0d_KzZw?si=16N94Upg_z84OcOw" 
+                    title="Video sobre nuestra empresa" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+            </iframe>
+        </section>
+
+        <!-- Sección 4: Contacto -->
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <p>Si tenes dudas, escribínos a través del formulario:</p>
+            <!-- Formulario de Contacto con Formspree -->
+            <form action="https://formspree.io/f/mppqyynw" method="POST">
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Etiqueta semántica Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 MiTienda. Todos los derechos reservados.</p>
+            <div class="redes-sociales">
+                <a href="#">Instagram</a>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+            </div>
+            <p>Contacto: contacto@mitienda.com | Teléfono: +56 9 1234 5678</p>
+        </div>
+    </footer>
+</body>
+</html>
